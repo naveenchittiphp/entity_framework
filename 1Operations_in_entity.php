@@ -27,7 +27,7 @@ Update :
   var codingInquiry = db.CodingInquiry.Where(x => (x.Bdosid == model.AssignCodingInquiryCases[a].BDOSID)).First();
                             codingInquiry.ReviewedComments = model.AssignCodingInquiryCases[a].ReviewedComments;
                             codingInquiry.ReviewedStatus = "Reviewed";
-                            db.CodingInquiry.Update(codingInquiry);
+                           db.SaveChanges();
 
 Delete : 
 ----------
